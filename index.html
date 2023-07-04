@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0"> 
+    <title>Sapos</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="sapoicone.ico">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" id="logo"><img src="Logo2.png" style="width:100px;height:100px;"/></a>
+
+        <button id="OpenMenu">&#9776;</button>
+
+        <nav id="menu">
+            <button id="CloseMenu">X</button>
+            <a href="index.html">Início</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="animais.html">Animais</a>
+            <a href="contatos.html">Contato</a>
+        </nav>
+    </header>   
+
+    <aside>
+    </aside>
+
+    <main id="main">
+    <section">
+    <h2>
+        Sapo
+    </h2>
+    <p id="textosapo">
+        Sapo é uma designação genérica de anfíbios da ordem Anura predominantemente terrestres, com pele rugosa, e glândulas parotoides semelhantes a verrugas. É usado especialmente em relação a membros da família Bufonidae. No entanto, não sendo uma designação científica, aplica-se também a algumas espécies de outras famílias como Bombinatoridae, Discoglossidae, Pelobatidae, Rhinophrynidae, Scaphiopodidae e Microhylidae. Por exemplo, o sapo-parteiro pertence à família Discoglossidae, à qual pertencem também as rãs-pintadas. A semelhança física dos sapos de famílias diferentes deve-se a evolução convergente em ambientes secos. <br>
+<br>
+Existem cerca de 4.800 espécies de sapos. A maioria deles vive próximo a uma fonte de água, muito embora existam sapos que vivam em ambientes húmidos que são considerados ambientes aquáticos, como a serapilheira de florestas tropicais húmidas. A necessidade de água é mais premente para os ovos e os girinos do sapo, e algumas espécies utilizam poças temporárias e água acumulada nos ramos de plantas, como as bromélias como sítio de criação.<br>
+<br>
+Os sapos se distinguem das rãs pelas membranas interdigitais pouco desenvolvidas e pela pele mais seca e rugosa. Geralmente, vivem em ambiente mais seco.<br>
+<br>
+Os anfíbios dependem da água para a postura de ovos, pois estes não têm casca, e para manter a pele húmida, necessário para a realização da respiração cutânea na qual a troca de gases é feita pela pele. A respiração cutânea é necessária pois a respiração pulmonar não é completamente eficiente.<br>
+<br>
+Depois de alguns dias, dos ovos saem girinos que respiram por brânquias, têm uma cauda e não têm pernas. Com o tempo o girino vai perdendo a cauda, desenvolvendo pernas posteriores e anteriores e trocando a respiração branquial pelas respirações pulmonar e cutânea até deixar a água ao término das transformações.<br>
+<br>
+Os sapos se alimentam de insetos e capturam suas presas lançando para fora da boca a língua musculosa, longa e pegajosa, que é presa ao assoalho da boca pela extremidade anterior.
+    </p>
+    <p>© Jonas, Tiago, Celso, Morozini</p>
+    </section>
+    </main>
+    
+    <footer>
+    </footer>
+
+    <script type="text/javascript">
+
+        OpenMenu.addEventListener('click', () => {
+            menu.style.display = 'flex'
+
+            menu.style.right = (menu.offsetWidth * -1) + 'px'
+
+            OpenMenu.style.display = 'none'
+
+            setTimeout(() => {
+                menu.style.opacity = '1'
+
+                menu.style.right = '0'
+            }, 10)
+        })
+
+        CloseMenu.addEventListener('click', () => {
+            setTimeout(() => {
+                menu.removeAttribute('style')
+                OpenMenu.removeAttribute('style')
+            }, 200)
+            menu.style.opacity = '0'
+            menu.style.right = (menu.offsetWidth * -1) + 'px'
+        })
+    </script>
+
+</body>
+</html>

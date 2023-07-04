@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0"> 
+    <title>Sapos</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="sapoicone.ico">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" id="logo"><img src="Logo2.png" style="width:100px;height:100px;"/></a>
+
+        <button id="OpenMenu">&#9776;</button>
+
+        <nav id="menu">
+            <button id="CloseMenu">X</button>
+            <a href="index.html">Início</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="animais.html">Animais</a>
+            <a href="contatos.html">Contato</a>
+        </nav>
+    </header>   
+
+    <aside>
+    </aside>
+
+    <main id="main">
+    <section">
+    <h2>
+        Em caso de problemas ligue para o numero abaixo
+    </h2>
+<h1> +55 42 9 8881-8811</h1>
+    </section>
+    </main>
+    
+    <footer>
+    </footer>
+
+    <script type="text/javascript">
+
+        OpenMenu.addEventListener('click', () => {
+            menu.style.display = 'flex'
+
+            menu.style.right = (menu.offsetWidth * -1) + 'px'
+
+            OpenMenu.style.display = 'none'
+
+            setTimeout(() => {
+                menu.style.opacity = '1'
+
+                menu.style.right = '0'
+            }, 10)
+        })
+
+        CloseMenu.addEventListener('click', () => {
+            setTimeout(() => {
+                menu.removeAttribute('style')
+                OpenMenu.removeAttribute('style')
+            }, 200)
+            menu.style.opacity = '0'
+            menu.style.right = (menu.offsetWidth * -1) + 'px'
+        })
+    </script>
+
+</body>
+</html>

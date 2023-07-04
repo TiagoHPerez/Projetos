@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0"> 
+    <title>Sapos</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="sapoicone.ico">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" id="logo"><img src="Logo2.png" style="width:100px;height:100px;"/></a>
+
+        <button id="OpenMenu">&#9776;</button>
+
+        <nav id="menu">
+            <button id="CloseMenu">X</button>
+            <a href="index.html">Início</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="animais.html">Animais</a>
+            <a href="contatos.html">Contato</a>
+        </nav>
+    </header>   
+
+    <aside>
+    </aside>
+
+    <main id="main">
+    <section">
+    <h2>
+        Lista de Sapos
+    </h2>
+    <ul>
+        <li>1-Sapo-comum (Bufo bufo)</li>
+        <li>2-Sapo-árabe (Sclerophrys arabica);</li>
+        <li>3-Sapo-verde-de-Baloch (Bufotes zugmayeri);</li>
+        <li>4-Sapo-verde-de-Baloch (Bufotes zugmayeri);</li>
+        <li>5-Sapo-malhado-caucasiano (Pelodytes caucasicus);</li>
+        <li>6-Sapo-cururu (Rhinella marina);</li>
+        <li>7-Sapo-da-água (Bufo stejnegeri);</li>
+        <li>8-Sapo-da-água (Bufo stejnegeri);</li>
+        <li>9-Sapo-do-rio-colorado (Incilius alvarius);</li>
+        <li>10-Sapo-americano (Anaxyrus americanusse);</li>
+        <li>11-Sapo-comum-asiático (Duttaphrynus melanostictus);</li>
+        <li>12-Sapo-corredor (Epidalea calamita);</li>
+        <li>13-Sapo-verde-europeu (Bufotes viridis);</li>
+        <li>14-Sapo-de-unha-negra (Pelobates cultripe);</li>
+        <li>15-Sapo-de-unha-negra (Pelobates cultripes);</li>
+    </ul>
+    </section>
+    </main>
+    
+    <footer>
+    </footer>
+
+    <script type="text/javascript">
+
+        OpenMenu.addEventListener('click', () => {
+            menu.style.display = 'flex'
+
+            menu.style.right = (menu.offsetWidth * -1) + 'px'
+
+            OpenMenu.style.display = 'none'
+
+            setTimeout(() => {
+                menu.style.opacity = '1'
+
+                menu.style.right = '0'
+            }, 10)
+        })
+
+        CloseMenu.addEventListener('click', () => {
+            setTimeout(() => {
+                menu.removeAttribute('style')
+                OpenMenu.removeAttribute('style')
+            }, 200)
+            menu.style.opacity = '0'
+            menu.style.right = (menu.offsetWidth * -1) + 'px'
+        })
+    </script>
+
+</body>
+</html>
