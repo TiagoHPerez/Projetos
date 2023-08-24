@@ -41,13 +41,13 @@
                         <a href="sistemas.html">Sistemas operacionais</a>
                     </li>
                     <li>
-                        <a href="sobre.html" class="active">Sobre Nós</a>
+                        <a href="sobre.html">Sobre Nós</a>
                     </li>
                     <li>
                         <a href="grupo.html">Grupo</a>
                     </li>
                     <li>
-                        <a href="contato.html">Contato</a>
+                        <a href="contato.html" class="active">Contato</a>
                     </li>
                 </ul>
             </nav>
@@ -59,21 +59,45 @@
             </label>
     </header>
 
-    <div class="content-container">
-        <div class="texto-sobre">
-            <h2>Sobre o Nosso Site</h2>
-            <p>Explore o fascinante mundo da computação gráfica e sistemas operacionais. Nossa missão é fornecer informações e insights detalhados sobre esses tópicos empolgantes. Desde os conceitos fundamentais até as tendências mais recentes, estamos aqui para enriquecer seu conhecimento. Se você é um estudante aspirante, um profissional da área ou apenas alguém curioso, nosso site é o lugar perfeito para aprender e se inspirar.</p>
-
-            <br>
-            
-            <a href="jonas.html">
-                <button class="cta-button">Voltar</button>
-            </a>
+    
+    <div class="contato-container">
+        <div class="faq">
+            <h2>Perguntas Frequentes</h2>
+            <div class="faq-item">
+                <h3>Qual é o objetivo deste site?</h3>
+                <p>O objetivo deste site é fornecer informações detalhadas sobre computação gráfica e sistemas operacionais.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Quem pode usar este site?</h3>
+                <p>Este site é destinado a estudantes, profissionais e entusiastas interessados em aprender sobre esses tópicos.</p>
+            </div>
+            <div class="faq-item">
+                <h3>O Morizini é Gay?</h3>
+                <p>É sério que você tem dúvidas em relação a isso? É Claro que sim!</p>
+            </div>
         </div>
-        <div class="imagem-lateral">
-            <img src="imagens/imagem-sobre.jpeg" alt="Imagem Grande">
+        <div class="contact-form">
+            <h2>Entre em Contato</h2>
+            <form>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Dúvida:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button class="cta-button" type="submit">Enviar</button>
+            </form>
         </div>
     </div>
-    
+    <br>
+    <div class="texto-html">
+        <a href="jonas.html">
+            <button class="cta-button">Voltar</button>
+        </a>
+    </div>
+
 </body>
 </html>

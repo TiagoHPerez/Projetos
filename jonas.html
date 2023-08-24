@@ -10,11 +10,10 @@
     <link rel="icon" type="image/x-icon" href="icone.ico">
 </head>
 <body>
-
+    <header>
     <!--Menu-->
 
-    <header>
-
+   
         <!--Logo do Menu-->
         <a href="jonas.html">
             <div class="logo">
@@ -32,7 +31,7 @@
                 <!--Botões do Menu-->
                 <ul>
                     <li>
-                        <a href="jonas.html" >Início</a>
+                        <a href="jonas.html" class="active">Início</a>
                     </li>
                     <li>
                         <a href="computação.html">Computação Gráfica</a>
@@ -41,7 +40,7 @@
                         <a href="sistemas.html">Sistemas operacionais</a>
                     </li>
                     <li>
-                        <a href="sobre.html" class="active">Sobre Nós</a>
+                        <a href="sobre.html">Sobre Nós</a>
                     </li>
                     <li>
                         <a href="grupo.html">Grupo</a>
@@ -59,21 +58,34 @@
             </label>
     </header>
 
-    <div class="content-container">
-        <div class="texto-sobre">
-            <h2>Sobre o Nosso Site</h2>
-            <p>Explore o fascinante mundo da computação gráfica e sistemas operacionais. Nossa missão é fornecer informações e insights detalhados sobre esses tópicos empolgantes. Desde os conceitos fundamentais até as tendências mais recentes, estamos aqui para enriquecer seu conhecimento. Se você é um estudante aspirante, um profissional da área ou apenas alguém curioso, nosso site é o lugar perfeito para aprender e se inspirar.</p>
+    <!--Carossel de Imagens-->
 
-            <br>
-            
-            <a href="jonas.html">
-                <button class="cta-button">Voltar</button>
-            </a>
+    <section class="container">
+        <div class="slider-wrapper">
+                
+            <!---Imagens-->
+            <div class="slider">    
+                <img id="slide-1" src="imagens/Image1.png">
+                <img id="slide-2" src="imagens/img4.png">
+                <img id="slide-3" src="imagens/Image3.png">
+            </div>
+            <!---Botão das Imagens-->
+            <div class="slider-nav">
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
+                <a href="#slide-3"></a>
+            </div>
         </div>
-        <div class="imagem-lateral">
-            <img src="imagens/imagem-sobre.jpeg" alt="Imagem Grande">
-        </div>
+    </section>
+
+    <div class="texto-html">
+        <h1 class="title">Bem-Vindo ao Nosso Site</h1>
+        <p class="text">Explore o mundo fascinante da computação gráfica e dos sistemas operacionais conosco! Aqui você encontrará informações valiosas e recursos úteis sobre esses temas empolgantes. Desde os fundamentos da renderização gráfica até as últimas tendências em sistemas operacionais modernos, estamos aqui para compartilhar conhecimento e insights com você. Seja você um estudante, profissional ou simplesmente alguém curioso, nosso site é o lugar certo para mergulhar nesse universo tecnológico.</p>
+        <a href="sobre.html">
+            <button class="cta-button">Saiba Mais</button>
+        </a>
     </div>
-    
+
+
 </body>
 </html>
